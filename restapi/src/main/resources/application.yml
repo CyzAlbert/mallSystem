@@ -1,0 +1,32 @@
+server:
+  port: 9010
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.51:3306/taotao?characterEncoding=utf-8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 192.168.0.51
+    port: 6379
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+
+redis:
+  HOST: 192.168.0.51
+  INDEX_CONTENT_REDIS_KEY: INDEX_CONTENT_REDIS_KEY
+  REDIS_ITEM_KEY: REDIS_ITEM_KEY
+  REDIS_ITEM_EXPIRE: 86400
+
+Solr:
+  ServerUrl: http://192.168.0.51:8080/solr
+
+ORDER_GEN_KEY: ORDER_GEN_KEY
+ORDER_INIT_ID: 100544
+ORDER_DETAIL_GEN_KEY: ORDER_DETAIL_GEN_KEY
+
+
